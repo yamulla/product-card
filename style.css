@@ -1,20 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 .page-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
-    color: #333333;
+    color: #515076;
     padding: 60px 20px;
 }
 .catalog-title {
     text-align: center;
     font-size: 42px;
     font-weight: 400;
-    color: #555577;
     margin-bottom: 50px;
 }
 
@@ -54,9 +53,9 @@
 }
 
 .product-card__category {
-    font-size: 11px;
+    font-size: 12px;
     text-transform: uppercase;
-    color: #999999;
+    color:#A5A3B9;
     letter-spacing: 1px;
     margin-bottom: 8px;
     display: block;
@@ -65,7 +64,6 @@
 .product-card__name {
     font-size: 20px;
     font-weight: 600;
-    color: #333355;
     margin-bottom: 10px;
 }
 
@@ -117,7 +115,7 @@
 }
 
 .product-card__price-label {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     color: #333355;
 }

@@ -1,38 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 .page-body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #ffffff;
+    font-size: 13px;
     color: #515076;
-    padding: 60px 20px;
 }
+
 .catalog-title {
-    text-align: center;
-    font-size: 42px;
+    font-size: 70px;
     font-weight: 400;
-    margin-bottom: 50px;
+    line-height: 78px;
+    text-align: center;
+    margin-bottom: 110px;
 }
 
 .product-grid {
     list-style: none;
+    padding: 0;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    max-width: 1100px;
-    margin: 0 auto;
+    gap: 45px;
     justify-content: center;
+    width: 1280px;
+    max-width: 100%;
 }
 
 .product-card {
-    background-color: #f8f8fa;
-    border-radius: 4px;
-    width: calc(33.333% - 20px);
-    min-width: 300px;
-    padding: 25px;
+    width: 340px;
+    height: 573px;
+    padding: 25px 25px 74px 25px;
+    background: #F7F7FA;
+    box-shadow: 2px 2px 10px 0 rgba(81, 80, 118, 0.1);
     display: flex;
     flex-direction: column;
 }
@@ -40,10 +45,10 @@
 .product-card__image-box {
     width: 100%;
     height: 220px;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .product-card__image {
@@ -53,87 +58,51 @@
 }
 
 .product-card__category {
-    font-size: 12px;
-    text-transform: uppercase;
-    color:#A5A3B9;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
     display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #A5A3B9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .product-card__name {
     font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
+    font-weight: 700;
+    margin-top: 5px;
 }
 
-.product-card__description {
-    font-size: 13px;
-    color: #666666;
-    line-height: 1.5;
-    margin-bottom: 15px;
+.product-card__description,
+.product-card__ingredients-title {
+    line-height: 18px;
 }
 
 .product-card__ingredients {
-    margin-bottom: 25px;
     flex-grow: 1;
-}
-
-.product-card__ingredients-title {
-    font-size: 13px;
-    color: #666666;
-    display: block;
-    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 .product-card__ingredients-list {
-    list-style: none;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 5px;
 }
 
 .product-card__ingredients-item {
-    font-size: 13px;
-    color: #666666;
-    position: relative;
-    padding-left: 15px;
-    margin-bottom: 3px;
-}
-
-.product-card__ingredients-item::before {
-    content: "o";
-    position: absolute;
-    left: 0;
-    color: #8888aa;
-    font-size: 11px;
+    line-height: 18px;
 }
 
 .product-card__price-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #e5e5e5;
-    padding-top: 15px;
+    width: 100%;
+    margin-top: auto;
 }
 
-.product-card__price-label {
-    font-size: 20px;
-    font-weight: 600;
-    color: #333355;
-}
-
+.product-card__price-label,
 .product-card__price-value {
-    font-size: 16px;
-    font-weight: 600;
-    color: #333355;
-}
-
-@media (max-width: 968px) {
-    .product-card {
-        width: calc(50% - 15px);
-    }
-}
-
-@media (max-width: 640px) {
-    .product-card {
-        width: 100%;
-    }
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
 }

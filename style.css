@@ -4,8 +4,9 @@
     margin: 0;
     padding: 0;
 }
-.page-body {
+body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
     background-color: #ffffff;
     color: #515076;
     padding: 60px 20px;
@@ -69,8 +70,6 @@
 }
 
 .product-card__description {
-    font-size: 13px;
-    color:#515076;
     line-height: 18px;
     margin-bottom: 15px;
 }
@@ -82,7 +81,7 @@
 
 .product-card__ingredients-title {
     font-size: 13px;
-    color: #666666;
+    color: #515076;
     display: block;
     margin-bottom: 5px;
 }
@@ -111,7 +110,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #e5e5e5;
     padding-top: 15px;
 }
 

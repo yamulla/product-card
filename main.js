@@ -1,3 +1,12 @@
+// Находим заголовок
+const catalogTitle = document.querySelector('.catalog-title');
+
+// Наведение мыши
+catalogTitle.addEventListener('mouseenter', () => {
+    // Вывод текста в консоль
+    console.log(catalogTitle.textContent);
+});
+
 const mainTitle = '.product-card__image-box'; // camelCase
 const MAINTITLE = '.product-card__image-box'; // upperCase
 const main_title = '.product-card__image-box'; // snake_case
@@ -48,8 +57,12 @@ function outputConsoleLog(message) {
   alert(message)
   console.log(message)
 }
+// Находим кнопку по ID
+const toggleButton = document.getElementById('toggle-btn');
 
-document.getElementById('show-time').addEventListener('click', () => {
-    const currentTime = new Date().toLocaleTimeString();
-    alert(`Текущее время: ${currentTime}`);
+// Вешаем слушатель клиика
+toggleButton.addEventListener('click', () => {
+
+    // если класса 'second-color-active' нет он его добавляет,если класс уже есть он его убирает.
+    toggleButton.classList.toggle('second-color-active');
 });

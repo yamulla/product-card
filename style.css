@@ -129,3 +129,18 @@ body {
     font-size: 20px;
     font-weight: 400;
 }
+/* Первый (базовый) цвет кнопки */
+.color-changing-btn {
+    background-color: #515076; /* Твой основной темно-синий цвет */
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Делает смену цвета плавной */
+}
+
+/* Второй цвет (класс, который будет добавлять JavaScript) */
+.second-color-active {
+    background-color: #ff6b6b; /* Яркий коралловый цвет для наглядности */
+}

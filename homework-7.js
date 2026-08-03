@@ -25,6 +25,7 @@ checkSpeed(299792458); // Скорость света
 // Пересенная товара
 let productName = "Casio G-Shock";
 
+
 // Переменная цены
 let productPrice = 150;
 

@@ -32,7 +32,7 @@ console.log(warm);
 const comComments = postComments.filter(function (item) {
   return item.email.includes(".com");
 });
-console.log(comComments);
+console.log(comComments); 
 
 
 //задание-8
@@ -53,3 +53,21 @@ postComments.forEach(function (item) {
   item.isInvalid = item.body.length > 180;
 });
 console.log(postComments);
+
+//задание-11
+
+const mail = postComments.reduce(function (acc, item) {
+  acc.push(item.email);
+  return acc;
+}, []);
+console.log(mail);
+
+const mailMap = postComments.map(function (item) {
+  return item.email;
+});
+console.log(mailMap);
+
+ // задание-12
+
+console.log(mail.toString());
+console.log(mail.join(", "));

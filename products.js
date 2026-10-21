@@ -1,3 +1,4 @@
+//Задание 2
 export const cards = [
     {
         category: "Для нормальной кожи",
@@ -34,7 +35,7 @@ description:"Интенсивно очищает, не повреждая защ
 
 ingredients:["минералы", "витамины C, A, PP, B и E", "солнцезащитные компоненты"],
 
-price:"1 1650 ₽",
+price:"1 650 ₽",
 
 photoPath:"img/photo_3.png"
 },

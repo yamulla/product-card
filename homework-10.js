@@ -1,5 +1,7 @@
+//Задание 1
 import { cards } from "./products.js";
 const template = document.getElementById('product-card-template');
+//Задание 3
 const productList = document.querySelector('.product-grid');
 function renderCards(cardsToRender) {
 
@@ -26,13 +28,13 @@ cardsToRender.forEach(card => {
 
 });
 }
-
+//Задание 4
 const nameToDescription = cards.reduce((acc, card) => {
     acc.push({ [card.name]: card.description })
     return acc;
 
 }, []);
-
+//Задание 5
 console.log(nameToDescription);
 const count = getCardsCount();
 renderCards(cards.slice(0, count));
